@@ -1,0 +1,91 @@
+{
+  "run_timestamp": "2026-02-22T10:14:33.002463+00:00",
+  "repo_url": "C:\\Users\\savy\\AppData\\Local\\Temp\\velo_stream_973q7j3z",
+  "raw_branch_name": "Vakratund Velo_Tester",
+  "branch_name": "VAKRATUND_VELO_TESTER_AI_Fix",
+  "total_time_taken": "0m 22s",
+  "total_time_seconds": 22.28,
+  "test_files_discovered": [
+    "C:\\Users\\savy\\AppData\\Local\\Temp\\velo_stream_973q7j3z\\test_main.py"
+  ],
+  "total_failures_detected": 3,
+  "total_fixes_applied": 2,
+  "bug_reports": [
+    "[SYNTAX] error in main.py line 5 \u2192 Fix: add missing colon to function definition",
+    "[INDENTATION] error in main.py line 10 \u2192 Fix: correct indentation of return statement",
+    "[LINTING] error in main.py line 13 \u2192 Fix: remove unused import statement"
+  ],
+  "files_fixed": [
+    "main.py",
+    "test_main.py"
+  ],
+  "branch_pushed": null,
+  "commit_sha": null,
+  "total_commits": 4,
+  "diffs": {
+    "main.py": {
+      "unified_diff": "--- a/main.py\n+++ b/main.py\n@@ -2,15 +2,14 @@\n     return a + b\n \n # INTENTIONAL BUG 1: Syntax Error (Missing colon)\n-def sub(a, b)\n+def sub(a, b):\n     return a - b\n \n # INTENTIONAL BUG 2: Indentation Error\n def mul(a, b):\n-return a * b\n+    return a * b\n \n # INTENTIONAL BUG 3: Unused Import (Linting)\n-import os\n \n if __name__ == \"__main__\":\n-    print(add(1, 2))\n+    print(add(1, 2))"
+    },
+    "test_main.py": {
+      "unified_diff": "--- a/test_main.py\n+++ b/test_main.py\n@@ -26,4 +26,4 @@\n def test_add_inverse():\n     \"\"\"A number plus its additive inverse should equal zero.\"\"\"\n     assert add(5, -5) == 0\n-    assert add(-100, 100) == 0\n+    assert add(-100, 100) == 0"
+    }
+  },
+  "final_ci_passed": true,
+  "final_ci_status": "PASSED",
+  "iterations_used": 2,
+  "max_retries": 5,
+  "ci_timeline": [
+    {
+      "iteration": 1,
+      "status": "FAILED",
+      "timestamp": "2026-02-22T10:14:10.730424+00:00",
+      "failures_in_run": 3,
+      "fixes_in_run": 2,
+      "commits_in_run": 2,
+      "error": null
+    },
+    {
+      "iteration": 2,
+      "status": "PASSED",
+      "timestamp": "2026-02-22T10:14:29.281859+00:00",
+      "failures_in_run": 0,
+      "fixes_in_run": 0,
+      "commits_in_run": 2,
+      "error": null
+    }
+  ],
+  "score": {
+    "base": 100,
+    "speed_bonus": 10,
+    "efficiency_penalty": 0,
+    "final": 110
+  },
+  "error": null,
+  "status": "SUCCESS",
+  "fixes": [
+    {
+      "file": "main.py",
+      "bug_type": "SYNTAX",
+      "line_number": 5,
+      "commit_message": "[AI-AGENT] Fix: add missing colon to function definition",
+      "status": "fixed",
+      "fix_description": "add missing colon to function definition"
+    },
+    {
+      "file": "main.py",
+      "bug_type": "INDENTATION",
+      "line_number": 10,
+      "commit_message": "[AI-AGENT] Fix: correct indentation of return statement",
+      "status": "fixed",
+      "fix_description": "correct indentation of return statement"
+    },
+    {
+      "file": "main.py",
+      "bug_type": "LINTING",
+      "line_number": 13,
+      "commit_message": "[AI-AGENT] Fix: remove unused import statement",
+      "status": "fixed",
+      "fix_description": "remove unused import statement"
+    }
+  ]
+}
