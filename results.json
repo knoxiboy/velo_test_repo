@@ -1,0 +1,53 @@
+{
+  "repo_url": "https://github.com/knoxiboy/velo_test_repo",
+  "team_name": "Vakratund",
+  "leader_name": "Knoxiboy",
+  "branch_name": "VAKRATUND_KNOXIBOY_AI_Fix",
+  "total_failures": 3,
+  "total_fixes": 1,
+  "ci_status": "PASSED",
+  "iterations_used": 2,
+  "max_iterations": 5,
+  "timeline": [
+    {
+      "status": "FAILED",
+      "timestamp": "03:04:02",
+      "message": "3 failure(s) detected, 1 fix(es) applied",
+      "failures_in_run": 3,
+      "fixes_in_run": 1
+    },
+    {
+      "status": "PASSED",
+      "timestamp": "03:04:06",
+      "message": "All tests passing \u2014 pipeline green",
+      "failures_in_run": 0,
+      "fixes_in_run": 0
+    }
+  ],
+  "fixes": [
+    {
+      "file": "main.py",
+      "bug_type": "SYNTAX",
+      "line_number": 5,
+      "commit_message": "[AI-AGENT] Fix: add missing colon after function definition",
+      "status": "fixed",
+      "fix_description": "add missing colon after function definition"
+    },
+    {
+      "file": "main.py",
+      "bug_type": "INDENTATION",
+      "line_number": 9,
+      "commit_message": "[AI-AGENT] Fix: correct indentation of return statement",
+      "status": "fixed",
+      "fix_description": "correct indentation of return statement"
+    },
+    {
+      "file": "main.py",
+      "bug_type": "LINTING",
+      "line_number": 11,
+      "commit_message": "[AI-AGENT] Fix: remove unused import 'os'",
+      "status": "fixed",
+      "fix_description": "remove unused import 'os'"
+    }
+  ]
+}
